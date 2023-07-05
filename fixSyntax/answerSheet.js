@@ -44,6 +44,15 @@ function findMax(arr) {
 } 
 // Semicolon should be an equals sign, and let is missing in front of max.
 
+//4.
+calculatePrice = (price, isMember) => {
+    let discount = isMember ? 0.2, 0;
+    let finalPrice = price - (price * discount);
+    console.log(finalPrice);
+    return finalprice.toFixed(2);
+}
+// The comma should be a colon, and finalprice needs an upper case "P" in the last line
+
 //HARD
 //1.
 //This function takes in a string and outputs a new version of the string
@@ -57,3 +66,14 @@ function randomUpperCase(word){
     return leftSide + upperLetter + rightSide;
 }
 //Backticks should be parenthesis and .toUpperCase needs parenthesis
+
+//2.
+function averageOfPositiveNumbers(numbers) {
+    let positiveNumbers = numbers.filter((number) => {
+        number > 0;
+    });
+    let sum = positiveNumbers.Reduce((total, number) => total + num, 0);
+    let average = sum / positiveNumbers.length();
+    return average;
+}
+//The filter needs the return keyword or it needs to be made one inline arrow function, .reduce instead of Reduce, and .length does not need parenthesis

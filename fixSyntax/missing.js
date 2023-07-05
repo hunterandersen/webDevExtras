@@ -39,6 +39,14 @@ function findMax(arr) {
     return max;
 }
 
+//4.
+calculatePrice = (price, isMember) => {
+    let discount = isMember ? 0.2, 0;
+    let finalPrice = price - (price * discount);
+    console.log(finalPrice);
+    return finalprice.toFixed(2);
+}
+
 //HARD
 //1.
 //This function takes in a string and outputs a new version of the string
@@ -50,4 +58,14 @@ function randomUpperCase(word){
     const rightSide = lowerCaseWord.slice(randNumber + 1);
     const upperLetter = lowerCaseWord[randNumber].toUpperCase;
     return leftSide + upperLetter + rightSide;
+}
+
+//2.
+function averageOfPositiveNumbers(numbers) {
+    let positiveNumbers = numbers.filter((number) => {
+        number > 0;
+    });
+    let sum = positiveNumbers.Reduce((total, number) => total + num, 0);
+    let average = sum / positiveNumbers.length();
+    return average;
 }
