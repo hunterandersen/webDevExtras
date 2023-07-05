@@ -76,4 +76,4 @@ function averageOfPositiveNumbers(numbers) {
     let average = sum / positiveNumbers.length();
     return average;
 }
-//The filter needs the return keyword or it needs to be made one inline arrow function, .reduce instead of Reduce, and .length does not need parenthesis
+//The filter needs the return keyword or it needs to be made one inline arrow function, .reduce instead of Reduce, .length does not need parenthesis, and num needs to match the parameter number
