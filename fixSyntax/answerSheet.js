@@ -1,4 +1,5 @@
-//EASY
+//MISSING/INCORRECT SYNTAX EXERCISES
+//EASY - Only one thing is incorrect or missing
 //1.
 greet(name) {
     return "Hello " + name;
@@ -16,7 +17,7 @@ function square {
 } // Missing parameter list.
 
 
-//MEDIUM
+//MEDIUM - 2 things incorrect or missing
 //1. 
 function reverseString[str] {
     let reversed = str.split('').reverse().join('');
