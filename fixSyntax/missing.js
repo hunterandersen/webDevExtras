@@ -1,19 +1,22 @@
-function add(a, b){
-    return a + b;
-}
+//EASY
+//1.
+greet(name) {
+    return "Hello " + name;
+} 
+// "function" keyword is missing.
 
-//This function takes in a string and outputs a new version of the string
-//where all letters have been made lower case except for one.
-function randomUpperCase(word){
-    let randNumber = Math.floor(Math.random() * word.length);
-    let lowerCaseWord = word.toLowerCase();
-    const leftSide = lowerCaseWord.slice(0, randNumber);
-    const rightSide = lowerCaseWord.slice(randNumber + 1);
-    const upperLetter = lowerCaseWord[randNumber].toUpperCase();
-    return leftSide + upperLetter + rightSide;
-}
-console.log(randomUpperCase("testing"));
+//2.
+function sum(a, b) {
+    a + b;
+} // "return" keyword is missing.
 
+//3.
+function square {
+    return n * n;
+} // Missing parameter list.
+
+
+//MEDIUM
 //1. 
 function reverseString[str] {
     let reversed = str.split('').reverse().join('');
@@ -40,4 +43,16 @@ function findMax(arr) {
 } 
 // Semicolon should be an equals sign, and let is missing in front of max.
 
-console.log(findMax([3, 4, 2, 4, 6, 3, 4, 0, 5]));
+//HARD
+//1.
+//This function takes in a string and outputs a new version of the string
+//where all letters have been made lower case except for one.
+function randomUpperCase(word){
+    let randNumber = Math.floor`Math.random() * word.length`;
+    let lowerCaseWord = word.toLowerCase();
+    const leftSide = lowerCaseWord.slice(0, randNumber);
+    const rightSide = lowerCaseWord.slice(randNumber + 1);
+    const upperLetter = lowerCaseWord[randNumber].toUpperCase;
+    return leftSide + upperLetter + rightSide;
+}
+//Backticks should be parenthesis and .toUpperCase needs parenthesis
