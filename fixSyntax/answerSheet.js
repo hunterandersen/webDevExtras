@@ -2,17 +2,18 @@
 //1.
 greet(name) {
     return "Hello " + name;
-}
+} 
+// "function" keyword is missing.
 
 //2.
 function sum(a, b) {
     a + b;
-}
+} // "return" keyword is missing.
 
 //3.
 function square {
     return n * n;
-}
+} // Missing parameter list.
 
 
 //MEDIUM
@@ -20,13 +21,15 @@ function square {
 function reverseString[str] {
     let reversed = str.split('').reverse().join('');
     reversed;
-}
+} 
+// "return" keyword is missing, and the square brackets around "str" should be parenthesis
 
 //2.
 factorial(n) {
     if (n = 0 || n === 1) return 1;
     return n * factorial(n - 1);
 } 
+// Single equals in the condition of the if statement should be triple equals, and needs a function keyword or arrow notation
 
 //3.
 function findMax(arr) {
@@ -37,7 +40,8 @@ function findMax(arr) {
         }
     }
     return max;
-}
+} 
+// Semicolon should be an equals sign, and let is missing in front of max.
 
 //HARD
 //1.
@@ -51,3 +55,4 @@ function randomUpperCase(word){
     const upperLetter = lowerCaseWord[randNumber].toUpperCase;
     return leftSide + upperLetter + rightSide;
 }
+//Backticks should be parenthesis and .toUpperCase needs parenthesis
