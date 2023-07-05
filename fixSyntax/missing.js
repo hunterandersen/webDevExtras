@@ -1,3 +1,4 @@
+//MISSING/INCORRECT SYNTAX EXERCISES
 //EASY - Only one thing is incorrect or missing
 //1.
 greet(name) {
